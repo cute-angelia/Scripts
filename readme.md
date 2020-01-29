@@ -1,9 +1,12 @@
-#
+# QuantumultX & Surge Scripting
 
-### 创建软连接
-
-创建相关软连接到对应目录
-
-```
-ln -s ~/git/github/cute-angelia/Scripts/js /Users/vanilla/Library/Mobile\ Documents/iCloud\~run\~surge/Documents
-```
+    | 名称        |  js    |
+    | --------   | --------  |
+    | 115 离线  | 115lx      |
+    | acgmiao   | acgmiao.js      |
+    | reddit    | apollopushserver      |
+    | 棒小孩    | bangxiaohai      |
+    | 番茄读书  | fanqiedushu      |
+    | 懒饭  | lanfanapp      |
+    | Pocket 书签   | pocket      |
+    | Raindrop  书签    | raindrop      |
