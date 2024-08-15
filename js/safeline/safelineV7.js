@@ -1,34 +1,10 @@
 const $tool = new Tool()
 
-const pathSystemAuth = "/api/open/system/authorize";
 const pathSystem = "/api/open/system";
 
 const url = $request.url;
 var body = $response.body;
-
-
-if (url.indexOf(pathSystemAuth) >= 0) {
-    var obj =  {
-        "data": {
-            "expired_at": 31558718892,
-            "org_id": "1000",
-            "org_name": "vanilla",
-            "purchased": true,
-            "river_url": "",
-            "state": "purchased",
-            "timeout": false
-        },
-        "err": null
-    }
-    body = JSON.stringify(obj)
-
-    $done({
-        body:body
-    });
-
-    return 
-}
-
+ 
 if (url.indexOf(pathSystem) >= 0) {
   var obj = JSON.parse(body);
   if (obj.hasOwnProperty('data')) {
@@ -45,13 +21,11 @@ if (url.indexOf(pathSystem) >= 0) {
     }
   }
   body = JSON.stringify(obj)
-
-  $done({
-    body:body
-  });
-
-  return 
 }
+
+$done({
+    body:body
+});
 
 function Tool() {
     _node = (() => {
