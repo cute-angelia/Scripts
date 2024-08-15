@@ -7,7 +7,7 @@ if (url.indexOf(pathSystem) >= 0) {
   var obj = JSON.parse(body);
   if (obj.hasOwnProperty('data')) {     
     obj = {
-        "data" : true,
+        "data" : 20,
         "err":null,
         "msg":"" 
     }
