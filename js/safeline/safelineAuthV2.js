@@ -11,7 +11,7 @@ if (url.indexOf(pathSystemAuth) >= 0) {
             "org_name": "vanilla",
             "purchased": true,
             "river_url": "",
-            "state": "purchased",
+            "state": "true",
             "timeout": false
         },
         "err": null

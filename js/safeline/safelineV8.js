@@ -13,7 +13,7 @@ if (url.indexOf(pathSystem) >= 0) {
         obj.data.license = {
             "valid" : true,
             "code":"55555",
-            "state":"purchased",
+            "state":"true",
             "org_id":"1000",
             "org_name":"vanilla",
             "expired_at":31558718892
