@@ -11,6 +11,9 @@ if (url.indexOf(pathSystem) >= 0) {
     }
   }
   body = JSON.stringify(obj)
+
+  $tool.notify("通知", "处理内容" + obj.hasOwnProperty('license'), body)
+
 }
 
 $done({
