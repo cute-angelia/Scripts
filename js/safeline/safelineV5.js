@@ -7,7 +7,15 @@ if (url.indexOf(pathSystem) >= 0) {
   var obj = JSON.parse(body);
   if (obj.hasOwnProperty('data')) {
     if (obj.data.hasOwnProperty('license')) {
-        obj.data.license.valid = true
+        
+        obj.data.license = {
+            "valid" : true,
+            "code":"55555",
+            "state":"ok",
+            "org_id":"1000",
+            "org_name":"vanilla",
+            "expired_at":31558718892
+        }
     }
   }
   body = JSON.stringify(obj)
