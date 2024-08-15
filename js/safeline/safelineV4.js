@@ -5,14 +5,14 @@ var body = $response.body;
 
 if (url.indexOf(pathSystem) >= 0) {
   var obj = JSON.parse(body);
-  if (obj.hasOwnProperty('license')) {
-    if (obj.license.hasOwnProperty('valid')) {
-      obj.license.valid = true;
+  if (obj.hasOwnProperty('data')) {
+    if (obj.data.hasOwnProperty('license')) {
+        obj.data.license.valid = true
     }
   }
   body = JSON.stringify(obj)
 
-  $tool.notify("通知", "处理内容" + obj.hasOwnProperty('license'), body)
+  // $tool.notify("通知", "处理内容" + obj.hasOwnProperty('license'), body)
 
 }
 
