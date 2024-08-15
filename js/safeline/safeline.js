@@ -17,13 +17,6 @@ $done({
   body:body
 });
 
-
-
-$tool.notify("ti", "good", "hello")
-
-$done({})
-
-
 function Tool() {
     _node = (() => {
         if (typeof require == "function") {
