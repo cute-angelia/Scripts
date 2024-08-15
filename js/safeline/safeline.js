@@ -1,4 +1,23 @@
 const $tool = new Tool()
+const pathSystem = "/api/open/system";
+const url = $request.url;
+var body = $response.body;
+
+if (url.indexOf(pathSystem) >= 0) {
+  var obj = JSON.parse(body);
+  if (obj.hasOwnProperty('license')) {
+    if (obj.license.hasOwnProperty('valid')) {
+      obj.license.valid = true;
+    }
+  }
+  body = JSON.stringify(obj)
+}
+
+$done({
+  body:body
+});
+
+
 
 $tool.notify("ti", "good", "hello")
 
